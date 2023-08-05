@@ -1,0 +1,102 @@
+/* AllTasks.css */
+.AllTasks {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AllTasks h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .AllTasks p {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /*.AllTasks ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .AllTasks li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .AllTasks li .taskBox {
+    margin-right: 8px;
+  }*/
+  
+  /* Styling the checkbox appearance */
+  /*.AllTasks li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #555;
+    border-radius: 4px;
+  }
+  
+  .AllTasks li input[type="checkbox"]:checked {
+    background-color: #555;
+  }
+  
+  .AllTasks li input[type="checkbox"]:checked::before {
+    content: "\2713";
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }*/
+  
+  /* Adding some font styles */
+  /*.AllTasks li span {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+  }*/
+  
+  /* Styling the delete button */
+  /*.AllTasks li .deleteButton {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+  }
+  
+  .AllTasks li .deleteButton::before {
+    content: "X";
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }*/
+  
+  /* Hover effect for the delete button */
+  /*.AllTasks li .deleteButton:hover {
+    background-color: #cc0000;
+  }*/
+  

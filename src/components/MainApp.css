@@ -1,0 +1,23 @@
+/* MainApp.css */
+.mainDiv {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #DCDCDC;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+  }
+  
+  /* Styling the header */
+  .mainDiv h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #007bff;
+  }
+  
+  /* Adding some spacing between components */
+  .mainDiv > * {
+    margin-bottom: 16px;
+  }
+  

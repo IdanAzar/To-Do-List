@@ -1,0 +1,184 @@
+
+ /* @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .Task input[type=checkbox] {
+      --active: #275EFE;
+      --active-inner: #fff;
+      --focus: 2px rgba(39, 94, 254, .3);
+      --border: #BBC1E1;
+      --border-hover: #275EFE;
+      --background: #fff;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E1E6F9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    .Task input[type=checkbox]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .Task input[type=checkbox]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .Task input[type=checkbox]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .Task input[type=checkbox]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .Task input[type=checkbox]:disabled + label {
+      cursor: not-allowed;
+    }
+    .Task input[type=checkbox]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .Task input[type=checkbox]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    .Task input[type=checkbox]:not(.switch) {
+      width: 21px;
+    }
+    .Task input[type=checkbox]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .Task input[type=checkbox]:not(.switch):checked {
+      --o: 1;
+    }
+    .Task input[type=checkbox] + label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .Task input[type=checkbox]:not(.switch) {
+      border-radius: 7px;
+    }
+    .Task input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 7px;
+      top: 4px;
+      transform: rotate(var(--r, 20deg));
+    }
+    .Task input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+  }
+
+  .Task * {
+    box-sizing: inherit;
+  }
+  .Task *:before,
+  .Task *:after {
+    box-sizing: inherit;
+  }*/
+
+  /* Task.css */
+
+  /* Task.css */
+.Task {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS';
+    color: #333;
+    width: 20%;
+    
+  }
+  
+  .taskBox {
+    margin-right: 8px;
+  }
+  
+  /* Styling the checkbox appearance */
+  .Task input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #555;
+    border-radius: 4px;
+  }
+  
+  .Task input[type="checkbox"]:checked {
+    background-color: #555;
+  }
+  
+  .Task input[type="checkbox"]:checked::before {
+    content: "\2713";
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  /* Adding some font styles */
+  .Task span {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  
+  /* Styling the delete button */
+  .deleteButton {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+  }
+  
+  .deleteButton::before {
+    content: "X";
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Hover effect for the delete button */
+  .deleteButton:hover {
+    background-color: #cc0000;
+  }
+
+  .Task:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
